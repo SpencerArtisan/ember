@@ -15,7 +15,7 @@
       <section id="main">
         <ul id="todo-list">
         {{#each}}
-          <li>
+          <li {{bind-attr class="isCompleted:completed"}}>
             <input type="checkbox" class="toggle">
             <label>{{title}}</label><button class="destroy"></button>
           </li>
@@ -58,6 +58,6 @@
     <script src="js/libs/ember-data.js"></script>
     <script src="js/application.js"></script>
     <script src="js/router.js"></script>
-    <script src="js/models/todo.js"></script>
+    <script src="js/todo.js"></script>
   </body>
 </html>
